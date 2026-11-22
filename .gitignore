@@ -1,0 +1,67 @@
+# ── Dependencies & build output ──────────────
+**/node_modules/
+**/dist/
+**/dist_old/
+**/build/
+shop-frontend/dist_root_backup/
+
+# ── Tests & coverage ─────────────────────────
+**/coverage/
+**/.nyc_output/
+
+# ── Environment files (never commit secrets) ─
+**/.env
+**/.env.*
+!**/.env.example
+
+# ── Logs & diagnostics ───────────────────────
+**/logs/
+**/*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+ecommerce/model-test-logs/
+
+# ── Runtime data ─────────────────────────────
+pids
+*.pid
+*.pid.lock
+
+# ── Local scratch / temp files ───────────────
+ecommerce/sync-tmp.*
+ecommerce/test-models.sh
+**/.temp/
+**/.tmp/
+
+# ── Archives & backups ───────────────────────
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.bak
+*.backup
+*~
+
+# ── OS files ─────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDEs & editors ───────────────────────────
+**/.idea/
+**/.vscode/*
+!**/.vscode/settings.json
+!**/.vscode/tasks.json
+!**/.vscode/launch.json
+!**/.vscode/extensions.json
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# NOTE: ecommerce/uploads/ is intentionally NOT ignored,
+# so the sample product/category images are part of the repo.
